@@ -1,5 +1,20 @@
 @media screen and (max-width: $screen-width) {
 
+    .header {
+        padding: 0 1rem;
+        background-color: $accentColor;
+
+        h1 {
+            padding-bottom: 1rem;
+            ;
+        }
+    }
+
+    section {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
     .container {
         width: 100%;
         background-color: white;
@@ -20,26 +35,39 @@
         h3 {
             display: block;
         }
+
         padding-top: 0;
-            padding-bottom: 0;
+        padding-bottom: 0;
     }
 
-    .period{
+    .period {
         text-align: right;
     }
 
-
-
     .left {
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding: 0 0 2rem 0;
         flex: 1;
     }
 
     // //right column
     .right {
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding: 1.5rem 0 3rem 0;
         flex: 1;
+    }
+
+    .skills {
+        //make it into 3 columns
+        display: flex;
+        flex-wrap: wrap;
+
+        h3 {
+            //take the whole width
+            flex: 0 0 100%;
+            /* flex-grow, flex-shrink, flex-basis */
+        }
+
+        ul {
+            flex: 1
+        }
     }
 }

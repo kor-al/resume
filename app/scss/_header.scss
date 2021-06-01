@@ -8,10 +8,24 @@
 }
 
 .contacts{
-    padding-top: 1.5rem;
-    padding-bottom: 1.9rem;
+    // padding-top: 1.5rem;
+    // padding-bottom: 1.9rem;
 
+    padding-top: 1.4rem;
+    padding-bottom: 1.5rem;
+
+    &__item + &__item {
+        margin-top: 0.5rem;
+        
+    }
     h3{
-        display: none;
+        display: none;   
+    }
+
+    i{
+        color: $grayishBlue;
+        margin-right: 1rem;
+        transform: scale(1.5);
+        opacity: 0.5;
     }
 }
