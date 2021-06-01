@@ -3,11 +3,15 @@
     &__title{
     padding-top: 3rem;
     padding-bottom: 1rem;
-    }
     
-    &__contacts{
+    }
+}
+
+.contacts{
     padding-top: 1.5rem;
     padding-bottom: 1.9rem;
-    }
 
+    h3{
+        display: none;
+    }
 }

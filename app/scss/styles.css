@@ -101,9 +101,13 @@ section {
   padding-bottom: 1rem;
 }
 
-.header__contacts {
+.contacts {
   padding-top: 1.5rem;
   padding-bottom: 1.9rem;
+}
+
+.contacts h3 {
+  display: none;
 }
 
 .main {
@@ -177,7 +181,7 @@ section {
 }
 
 .sub {
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
 }
 
 .sub section {
@@ -216,6 +220,47 @@ section {
   }
   @page {
     margin: 0;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    width: 100%;
+    background-color: white;
+    margin: 0 auto;
+  }
+  .two-col {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .phone {
+    display: none;
+  }
+  .contacts {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .contacts h3 {
+    display: block;
+  }
+  .period {
+    text-align: right;
+  }
+  .left {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .right {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
   }
 }
 /*# sourceMappingURL=styles.css.map */

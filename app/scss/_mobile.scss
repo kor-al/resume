@@ -1,0 +1,45 @@
+@media screen and (max-width: $screen-width) {
+
+    .container {
+        width: 100%;
+        background-color: white;
+        margin: 0 auto;
+    }
+
+
+    .two-col {
+        flex-direction: column;
+    }
+
+    .phone {
+        display: none;
+    }
+
+
+    .contacts {
+        h3 {
+            display: block;
+        }
+        padding-top: 0;
+            padding-bottom: 0;
+    }
+
+    .period{
+        text-align: right;
+    }
+
+
+
+    .left {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        flex: 1;
+    }
+
+    // //right column
+    .right {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        flex: 1;
+    }
+}
