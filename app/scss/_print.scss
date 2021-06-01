@@ -1,0 +1,22 @@
+@media print {
+
+    html, body{ height:100%; background-color: $white};
+
+    .container{
+    width: 100%;
+    max-width: 100%;
+    margin-top: 0;
+    height: 100%;
+    overflow: hidden;
+    }
+    //right column
+.right{
+    padding-right: 1rem;
+}
+
+
+    @page { 
+        //size:210mm 297mm; 
+        margin: 0;
+    }
+}
