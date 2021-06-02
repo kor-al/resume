@@ -1,3 +1,5 @@
+//the right column with supporting data points: skills, achievements
+
 .sub {
 
     padding-bottom: 3rem;
@@ -18,9 +20,22 @@
         margin-top: 0.275rem;
     }
 
-
     .details {
         color: $grayishBlue;
+    }
+
+    .achievements__list
+    {
+        li+li{
+            margin-top: 1rem;
+        }
+    }
+
+    .languages__list
+    {
+        li+li{
+            margin-top: 1rem;
+        }
     }
 
 }

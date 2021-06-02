@@ -1,3 +1,5 @@
+//the left column with main data points: work experience and education
+
 .main {
 
     padding-bottom: 3rem;
@@ -6,65 +8,66 @@
         margin-top: 2rem;
     }
 
-    ul{
+    ul {
         //padding-left:1rem;
         padding: 0;
         margin: 0;
         list-style-position: inside;
         list-style-type: "–"
     }
-}
 
-.period {
-    font-weight: 300;
-    font-size: $font-xsm;
-    align-self: flex-start;
-    color: $grayishBlue;
-}
-
-.work {
-
-    &__item {
-        margin-top: 1rem;
-        
-    }
-
-    &__header {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 0.5rem;
-        position: relative;
-
-        &:after{
-            content: "";
-            height: 100%;
-            width: 4rem;
-            left: -5rem;
-            top:0;
-            background-color: $accentColor;
-            position: absolute;
-        }
-
-        .position {
-            color: $grayishBlue;
-            font-size: $font-sm;
-        }
-    }
-}
-
-.edu {
-
-    &__item {
-        margin-top: 1rem;
-    }
-
-    &__header {
-        display: flex;
-        justify-content: space-between;
-
-    }
-
-    &__desc {
+    .period {
+        font-weight: 300;
+        font-size: $font-xsm;
+        align-self: flex-start;
         color: $grayishBlue;
     }
+
+    .work {
+
+        &__item {
+            margin-top: 1rem;
+
+        }
+
+        &__header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+            position: relative;
+
+            &:after {
+                content: "";
+                height: 100%;
+                width: 4rem;
+                left: -5rem;
+                top: 0;
+                background-color: $accentColor;
+                position: absolute;
+            }
+
+            .position {
+                color: $grayishBlue;
+                font-size: $font-sm;
+            }
+        }
+    }
+
+    .edu {
+
+        &__item {
+            margin-top: 1rem;
+        }
+
+        &__header {
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        &__desc {
+            color: $grayishBlue;
+        }
+    }
+
 }

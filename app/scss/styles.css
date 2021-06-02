@@ -137,7 +137,7 @@ section {
   list-style-type: "–";
 }
 
-.period {
+.main .period {
   font-weight: 300;
   font-size: 0.625rem;
   -ms-flex-item-align: start;
@@ -145,11 +145,11 @@ section {
   color: #6E6F71;
 }
 
-.work__item {
+.main .work__item {
   margin-top: 1rem;
 }
 
-.work__header {
+.main .work__header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -160,7 +160,7 @@ section {
   position: relative;
 }
 
-.work__header:after {
+.main .work__header:after {
   content: "";
   height: 100%;
   width: 4rem;
@@ -170,16 +170,16 @@ section {
   position: absolute;
 }
 
-.work__header .position {
+.main .work__header .position {
   color: #6E6F71;
   font-size: 0.813rem;
 }
 
-.edu__item {
+.main .edu__item {
   margin-top: 1rem;
 }
 
-.edu__header {
+.main .edu__header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -188,7 +188,7 @@ section {
           justify-content: space-between;
 }
 
-.edu__desc {
+.main .edu__desc {
   color: #6E6F71;
 }
 
@@ -215,24 +215,58 @@ section {
   color: #6E6F71;
 }
 
-@media print {
-  html, body {
-    height: 100%;
-    background-color: white;
-  }
-  .container {
-    width: 100%;
-    max-width: 100%;
-    margin-top: 0;
-    height: 100%;
-    overflow: hidden;
-  }
-  .right {
-    padding-right: 1rem;
-  }
-  @page {
-    margin: 0;
-  }
+.sub .achievements__list li + li {
+  margin-top: 1rem;
+}
+
+.sub .languages__list li + li {
+  margin-top: 1rem;
+}
+
+.skills .icon {
+  margin-right: 0.5em;
+}
+
+.work .icon:first-child {
+  margin-left: 1em;
+}
+
+.icon {
+  display: inline-block;
+  width: 0.8em;
+  height: 0.8em;
+}
+
+.icon.python {
+  background-color: #67CFEE;
+}
+
+.icon.sql {
+  background-color: #cdb4db;
+}
+
+.icon.vba {
+  background-color: #90F4C7;
+}
+
+.icon.r-matlab {
+  background-color: #eaac8b;
+}
+
+.icon.web-skill {
+  border-radius: 50%;
+}
+
+.icon.web-skill.html {
+  background-color: #eaac8b;
+}
+
+.icon.software-skill {
+  border-radius: 50%;
+}
+
+.icon.software-skill.cpp {
+  background-color: #cdb4db;
 }
 
 @media screen and (max-width: 800px) {
@@ -300,6 +334,32 @@ section {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
+  }
+  .icon {
+    display: none;
+  }
+}
+
+@media print {
+  html, body {
+    height: 100%;
+    background-color: white;
+  }
+  .container {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 0;
+    height: 100%;
+    overflow: hidden;
+  }
+  .right {
+    padding-right: 1rem;
+  }
+  .icon {
+    display: none;
+  }
+  @page {
+    margin: 0;
   }
 }
 /*# sourceMappingURL=styles.css.map */

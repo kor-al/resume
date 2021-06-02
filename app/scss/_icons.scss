@@ -1,0 +1,56 @@
+
+//add margins on the right for the list
+.skills{
+    .icon{
+        margin-right: 0.5em;
+    }
+}
+
+//add margins on the left for the text
+.work {
+    .icon:first-child{
+        margin-left: 1em;
+    }
+}
+
+
+.icon{
+    display: inline-block;
+    width: 0.8em;
+    height: 0.8em;
+    
+
+&.python{
+    background-color: $pythonColor;
+}
+
+&.sql{
+    background-color: $sqlColor;
+}
+
+&.vba{
+    background-color: $vbaColor;
+}
+
+&.r-matlab{
+    background-color: $rColor;
+}
+
+
+&.web-skill{
+    border-radius: 50%;
+    &.html{
+        background-color: $webColor;
+        
+    }
+}
+
+
+&.software-skill{
+    border-radius: 50%;
+    &.cpp{
+        background-color: $cppColor;
+    }
+}
+
+}

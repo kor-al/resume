@@ -19,10 +19,11 @@
         
     }
     h3{
+        //hide h3 on desktop
         display: none;   
     }
-
     i{
+        //icons
         color: $grayishBlue;
         margin-right: 1rem;
         transform: scale(1.5);
