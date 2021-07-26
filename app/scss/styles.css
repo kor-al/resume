@@ -326,8 +326,14 @@ section {
   }
 }
 
+@page {
+  size: A4;
+  margin: 0;
+}
+
 @media print {
-  html, body {
+  html,
+  body {
     height: 100%;
     background-color: white;
   }
@@ -343,8 +349,5 @@ section {
   }
   .icon {
     display: none;
-  }
-  @page {
-    margin: 0;
   }
 }
