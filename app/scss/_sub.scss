@@ -21,13 +21,36 @@
     }
 
     .details {
+        margin-top: 0.275rem;
         color: $grayishBlue;
+
+        a{
+            color: $grayishBlue;
+            text-decoration: underline;
+
+            &:hover{
+                color: $darkBlue;
+            }
+
+            &:visited{
+                color: $grayishBlue;
+                text-decoration: underline;
+            }
+        }
     }
 
     .achievements__list
     {
         li+li{
             margin-top: 1rem;
+        }
+
+        i{
+            //icons
+            color: $grayishBlue;
+            margin-right: 0.5rem;
+            transform: scale(1);
+            opacity: 0.5;
         }
     }
 

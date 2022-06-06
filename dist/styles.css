@@ -213,11 +213,34 @@ section {
 }
 
 .sub .details {
+  margin-top: 0.275rem;
   color: #6E6F71;
+}
+
+.sub .details a {
+  color: #6E6F71;
+  text-decoration: underline;
+}
+
+.sub .details a:hover {
+  color: #2d314d;
+}
+
+.sub .details a:visited {
+  color: #6E6F71;
+  text-decoration: underline;
 }
 
 .sub .achievements__list li + li {
   margin-top: 1rem;
+}
+
+.sub .achievements__list i {
+  color: #6E6F71;
+  margin-right: 0.5rem;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 0.5;
 }
 
 .sub .languages__list li + li {
