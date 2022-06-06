@@ -28,7 +28,7 @@ a, a:visited, a:hover {
   color: #2d314d;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
@@ -50,6 +50,11 @@ h3 {
 
 h4 {
   font-size: 1rem;
+  font-weight: 500;
+}
+
+h5 {
+  font-size: 0.813rem;
   font-weight: 500;
 }
 
@@ -171,9 +176,21 @@ section {
   position: absolute;
 }
 
+.main .work__header .company__desc {
+  margin-bottom: 0.275rem;
+}
+
+.main .work__header .company__desc a {
+  text-decoration: underline;
+}
+
 .main .work__header .position {
   color: #6E6F71;
   font-size: 0.813rem;
+}
+
+.main .work__current {
+  margin-bottom: 0.275rem;
 }
 
 .main .edu__item {

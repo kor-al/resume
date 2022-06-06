@@ -46,10 +46,22 @@
                 position: absolute;
             }
 
+            .company__desc{
+                margin-bottom: 0.275rem;
+
+                a{
+                    text-decoration: underline;
+                }
+            }
+
             .position {
                 color: $grayishBlue;
                 font-size: $font-sm;
             }
+        }
+
+        &__current{
+            margin-bottom: 0.275rem;
         }
     }
 
