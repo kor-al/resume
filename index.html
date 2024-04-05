@@ -1,36 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800&family=Raleway:wght@100;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link type="text/css" href="dist/styles.css" rel="stylesheet" />
+    <title>Resume</title>
+  </head>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800&family=Raleway:wght@100;300;400;500&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link type="text/css" href="dist/styles.css" rel="stylesheet">
-  <title>Resume</title>
+  <body>
+    <div class="container two-col">
+      <div class="main left">
+        <header class="header">
+          <div class="header__title">
+            <h1>Alisa Korinevskaya</h1>
+            <h2>Data Scientist</h2>
+          </div>
+        </header>
 
-</head>
+        <section class="work">
+          <h3>Work Experience</h3>
 
-<body>
-  <div class="container two-col">
-    <div class="main left">
-      <header class="header">
-        <div class="header__title">
-          <h1>Alisa Korinevskaya</h1>
-          <h2>Data Scientist</h2>
-        </div>
-      </header>
-
-      <section class="work">
-        <h3>Work Experience</h3>
-
-        <!-- <div class="work__desc">
+          <!-- <div class="work__desc">
               Includes but not limited to:
               <ul>
                 <li>
@@ -47,118 +54,184 @@
             </div>
           </div> -->
 
-        <div class="work__item">
-          <div class="work__header">
-            <div class="company">
-              <h4>Celonis</h4>
-              <h5 class="company__desc">Munich | <a href="https://www.celonis.com/" target="_blank"
-                  title="Celonis website">celonis.com</a></h5>
-              <div class="position">Data Visualisation Engineer</div>
+          <div class="work__item">
+            <div class="work__header">
+              <div class="company">
+                <h4>Celonis SE</h4>
+                <h5 class="company__desc">
+                  Munich |
+                  <a
+                    href="https://www.celonis.com/"
+                    target="_blank"
+                    title="Celonis website"
+                    >celonis.com</a
+                  >
+                </h5>
+                <div class="position">Data Visualisation Engineer</div>
+              </div>
+              <div class="period">06.2023 - current</div>
             </div>
-            <div class="period">06.2023 - current</div>
-          </div>
-          <div class="work__desc">
-            <div class="work__current">
-              Design and development of data visualisation systems for process mining and data analytics helping companies to optimize their performance
-               <i class="icon python"
-                data-skill="Python"></i> <i class="icon web-skill html" data-skill="Web dev: Angular, TypeScript, RxJS"></i>
+            <div class="work__desc">
+              <div class="work__current">
+                Designed and developed data visualization systems for process
+                mining and analytics, enabling companies to optimize their
+                performance
+                <i class="icon python" data-skill="Python"></i>
+                <i
+                  class="icon web-skill html"
+                  data-skill="Web dev: Angular, TypeScript, RxJS"
+                ></i>
+                <i class="icon sql" data-skill="SQL"></i>
+              </div>
             </div>
           </div>
-        </div>
 
+          <div class="work__item">
+            <div class="work__header">
+              <div class="company">
+                <h4>BCG Digital Ventures</h4>
+                <h5 class="company__desc">
+                  Berlin |
+                  <a
+                    href="https://bcgdv.com/"
+                    target="_blank"
+                    title="BCG website"
+                    >bcgdv.com</a
+                  >
+                </h5>
+                <div class="position">
+                  Engineer, Data Science and Software Development
+                </div>
+              </div>
+              <div class="period">10.2021 - 05.2022</div>
+            </div>
+            <div class="work__desc">
+              <div class="work__current">
+                Conducted research and spearheaded development of data-driven
+                solutions to launch and grow successful businesses:
+              </div>
+              <ul>
+                <li>
+                  Implemented data science and ML pipelines for cutting-edge
+                  marketing automation in the fashion sector, enhancing
+                  analytics capabilities
+                  <i class="icon python" data-skill="Python"></i>
+                  <i class="icon r-matlab" data-skill="R"></i>
+                  <i class="icon tableau" data-skill="Tableau"></i>
+                </li>
+                <li>
+                  Developed front-end for AI-powered solution, quantifying,
+                  monitoring, and collecting corporate environmental footprints
+                  <i
+                    class="icon web-skill html"
+                    data-skill="Web dev: React, TypeScript, Redux"
+                  ></i>
+                  <i class="icon sql" data-skill="SQL"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
 
-        <div class="work__item">
-          <div class="work__header">
-            <div class="company">
-              <h4>BCG Digital Ventures</h4>
-              <h5 class="company__desc">Berlin | <a href="https://bcgdv.com/" target="_blank"
-                  title="BCG website">bcgdv.com</a></h5>
-              <div class="position">Engineer: Data Science and Front-End Development</div>
+          <div class="work__item">
+            <div class="work__header">
+              <div class="company">
+                <h4>Boston Consulting Group (BCG)</h4>
+                <h5 class="company__desc">
+                  EMEA office, Moscow / Istanbul |
+                  <a
+                    href="https://www.bcg.com/"
+                    target="_blank"
+                    title="BCG website"
+                    >bcg.com</a
+                  >
+                </h5>
+                <div class="position">
+                  Data Analyst and Developer at GAMMA A
+                </div>
+                <div class="position">Data Scientist at GAMMA C</div>
+              </div>
+              <div class="period">
+                09.2019 - 09.2020 <br />
+                10.2021 - 06.2022
+              </div>
             </div>
-            <div class="period">10.2021 - 05.2022 </div>
-          </div>
-          <div class="work__desc">
-            <div class="work__current">
-              Research and development of innovative data-driven solutions to build and launch businesses
+            <div class="work__desc">
+              <div class="work__current">
+                Delivered commercial value through data-driven decision-making,
+                automation, and full-stack web development expertise:
+              </div>
+              <ul>
+                <li>
+                  Created a data-intensive UI using React.js for the promo
+                  optimization application
+                  <i class="icon python" data-skill="Python"></i>
+                  <i class="icon web-skill html" data-skill="Web dev"></i>
+                </li>
+                <li>
+                  Owned multiple ML modules within the cross-sell pipeline and
+                  client segmentation framework
+                  <i class="icon python" data-skill="Python"></i>
+                  <i class="icon sql" data-skill="SQL"></i>
+                </li>
+                <li>
+                  Implemented a tool for PMO automation and data visualization
+                  for the logistics company<i
+                    class="icon python"
+                    data-skill="Python"
+                  ></i>
+                  <i class="icon tableau" data-skill="Tableau"></i>
+                </li>
+              </ul>
             </div>
-            <ul>
-              <li>
-                Analytics and implementation of data science and ML pipelines for innovative marketing automation in the fashion industry<i class="icon python"
-                  data-skill="Python"></i> <i class="icon r-matlab" data-skill="R"></i> <i class="icon tableau" data-skill="Tableau"></i>
-              </li>
-              <li>
-                Front-end development of the AI-powered solution to quantify, monitor and collect current corporate environmental footprints 
-                <i class="icon web-skill html" data-skill="Web dev: React, TypeScript, Redux"></i> <i class="icon sql" data-skill="SQL"></i>
-              </li>
-            </ul>
           </div>
-        </div>
 
-        <div class="work__item">
-          <div class="work__header">
-            <div class="company">
-              <h4>Boston Consulting Group (BCG)</h4>
-              <h5 class="company__desc">EMEA office, Moscow / Istanbul | <a href="https://www.bcg.com/" target="_blank"
-                  title="BCG website">bcg.com</a></h5>
-              <div class="position">Data Analyst and Developer at GAMMA A</div>
-              <div class="position">Data Scientist at GAMMA C</div>
+          <div class="work__item">
+            <div class="work__header">
+              <div class="company">
+                <h4>Freelance</h4>
+                <div class="position">
+                  Data Scientist / Web Developer and UI Designer
+                </div>
+              </div>
+              <div class="period">
+                08.2018 - 03.2019 <br />
+                10.2020 - 09.2021
+              </div>
             </div>
-            <div class="period">09.2019 - 09.2020 <br> 10.2021 - 06.2022 </div>
-          </div>
-          <div class="work__desc">
-            <div class="work__current">
-              Delivered commercial value by data-informed decision making, automation and full stack web development
+            <div class="work__desc">
+              Implemented a variety of projects encompassing data analysis,
+              automation, and web development
+              <i class="icon python" data-skill="Python"></i>
+              <i class="icon web-skill html" data-skill="Web dev"></i>
             </div>
-            <ul>
-              <li>
-                Developed data-heavy UI in React.js for the promo optimization app<i class="icon python"
-                  data-skill="Python"></i> <i class="icon web-skill html" data-skill="Web dev"></i>
-              </li>
-              <li>
-                Owned several ML modules for the cross-sell pipeline and client segmentation <i class="icon python"
-                  data-skill="Python"></i> <i class="icon sql" data-skill="SQL"></i>
-              </li>
-              <li>
-                Implemented a tool for PMO automation and data visualization for the logistics company<i
-                  class="icon python" data-skill="Python"></i>
-                <i class="icon tableau" data-skill="Tableau"></i>
-              </li>
-            </ul>
           </div>
-        </div>
 
-        <div class="work__item">
-          <div class="work__header">
-            <div class="company">
-              <h4>Freelance</h4>
-              <div class="position">Data Scientist / Web Developer and UI Designer</div>
+          <div class="work__item">
+            <div class="work__header">
+              <div class="company">
+                <h4>Genotek, Biotechnology company</h4>
+                <h5 class="company__desc">
+                  Moscow |
+                  <a
+                    href="https://www.genotek.ru/"
+                    target="_blank"
+                    title="Genotek website"
+                    >genotek.ru</a
+                  >
+                </h5>
+                <div class="position">Data Scientist / Bioinformatician</div>
+              </div>
+              <div class="period">04.2019 - 08.2019</div>
             </div>
-            <div class="period">08.2018 - 03.2019 <br> 10.2020 - 09.2021</div>
-          </div>
-          <div class="work__desc">
-            Various projects on data analysis, automation and web development <i class="icon python"
-              data-skill="Python"></i> <i class="icon web-skill html" data-skill="Web dev"></i>
-          </div>
-        </div>
-
-        <div class="work__item">
-          <div class="work__header">
-            <div class="company">
-              <h4>Genotek, Biotechnology company</h4>
-              <h5 class="company__desc">Moscow | <a href="https://www.genotek.ru/" target="_blank"
-                  title="Genotek website">genotek.ru</a></h5>
-              <div class="position">Data Scientist / Bioinformatician</div>
+            <div class="work__desc">
+              Engineered the Ancestry Decomposition Pipeline: a sequence of
+              machine learning models refining chromosome subsequence
+              classification <i class="icon python" data-skill="Python"></i>
+              <i class="icon software-skill cpp" data-skill="C++"></i>
             </div>
-            <div class="period">04.2019 - 08.2019</div>
           </div>
-          <div class="work__desc">
-            Developed the Ancestry Decomposition Pipeline: a cascade of several machine learning models refining the
-            classification of chromosome subsequences. <i class="icon python" data-skill="Python"></i> <i
-              class="icon software-skill cpp" data-skill="C++"></i>
-          </div>
-        </div>
 
-        <!-- <div class="work__item">
+          <!-- <div class="work__item">
           <div class="work__header">
             <div class="company">
               <h4>National Research University <br> Higher School of Economics (HSE)</h4>
@@ -181,115 +254,172 @@
             </ul>
           </div>
         </div> -->
+        </section>
 
-      </section>
-
-      <section class="edu">
-        <h3>Education</h3>
-        <div class="edu__item">
-          <div class="edu__header">
-            <h4>3rd International Summer School on <br> AI and Games</h4>
-            <div class="period">5 - 9.07.2021</div>
-          </div>
-          <div class="edu__desc">Modl.ai</div>
-        </div>
-        <div class="edu__item">
-          <div class="edu__header">
-            <h4>MSc in Data Science, Computer Vision</h4>
-            <div class="period">2016 - 2018</div>
-          </div>
-          <div class="edu__desc">National Research University Higher School of Economics</div>
-        </div>
-        <div class="edu__item">
-          <div class="edu__header">
-            <h4>Erasmus+ Exchange Studies in Data Science</h4>
-            <div class="period">2017</div>
-          </div>
-          <div class="edu__desc">University of Helsinki</div>
-        </div>
-        <div class="edu__item">
-          <div class="edu__header">
-            <h4>BSc in Applied Mathematics</h4>
-            <div class="period">2012 - 2016</div>
-          </div>
-          <div class="edu__desc">National Research University Higher School of Economics</div>
-        </div>
-      </section>
-    </div>
-
-    <div class="sub right">
-      <section class="contacts">
-        <h3>Contacts</h3>
-        <ul>
-          <li class="phone contacts__item"><i class="fa fa-phone"></i>Upon Request</li>
-          <li class="email contacts__item"><i class="fa fa-envelope"></i>korinalice@gmail.com</li>
-          <li class="potfolio contacts__item"><i class="fa fa-map-marker" style="margin-left: 0.15rem;margin-right: 1.15rem;"></i>Munich, Germany</li>
-          <li class="potfolio contacts__item"><i class="fa fa-github-alt"></i><a href="https://github.com/kor-al"
-              target="_blank" title="My GitHub">github.com/kor-al</a></li>
-      </section>
-      <section class="skills">
-        <h3>Skills</h3>
-
-        <ul>
-          <li>Machine Learning and AI</li>
-          <li>Statistical Modelling</li>
-          <li>Data Mining</li>
-          <li>Data Visualization</li>
-          <li>Front-End Development</li>
-        </ul>
-
-        <ul>
-          <li><i class="icon python"></i>Python <div class="details">scikit-learn, tensorflow, keras, pandas, seaborn,
-              plotly, bokeh etc
+        <section class="edu">
+          <h3>Education</h3>
+          <div class="edu__item">
+            <div class="edu__header">
+              <h4>
+                3rd International Summer School on <br />
+                AI and Games
+              </h4>
+              <div class="period">5 - 9.07.2021</div>
             </div>
-          </li>
-          <li><i class="icon sql"></i>SQL</li>
-          <li><i class="icon r-matlab"></i>R, MATLAB</li>
-          <li><i class="icon tableau"></i>Tableau</li>
-        </ul>
+            <div class="edu__desc">Modl.ai</div>
+          </div>
+          <div class="edu__item">
+            <div class="edu__header">
+              <h4>MSc in Data Science, Computer Vision</h4>
+              <div class="period">2016 - 2018</div>
+            </div>
+            <div class="edu__desc">
+              National Research University Higher School of Economics
+            </div>
+          </div>
+          <div class="edu__item">
+            <div class="edu__header">
+              <h4>Erasmus+ Exchange Studies in Data Science</h4>
+              <div class="period">2017</div>
+            </div>
+            <div class="edu__desc">University of Helsinki</div>
+          </div>
+          <div class="edu__item">
+            <div class="edu__header">
+              <h4>BSc in Applied Mathematics</h4>
+              <div class="period">2012 - 2016</div>
+            </div>
+            <div class="edu__desc">
+              National Research University Higher School of Economics
+            </div>
+          </div>
+        </section>
+      </div>
 
-        <ul>
-          <li><i class="icon web-skill html"></i>JavaScript, D3.js,</li>
-          <li><i class="icon emrty"></i>React, Angular,</li>
-          <li><i class="icon emrty"></i>TypeScript, RxJS</li>
-        </ul>
+      <div class="sub right">
+        <section class="contacts">
+          <h3>Contacts</h3>
+          <ul>
+            <li class="phone contacts__item">
+              <i class="fa fa-phone"></i>Upon Request
+            </li>
+            <li class="email contacts__item">
+              <i class="fa fa-envelope"></i>korinalice@gmail.com
+            </li>
+            <li class="potfolio contacts__item">
+              <i
+                class="fa fa-map-marker"
+                style="margin-left: 0.15rem; margin-right: 1.15rem"
+              ></i
+              >Munich, Germany
+            </li>
+            <li class="potfolio contacts__item">
+              <i class="fa fa-github-alt"></i
+              ><a
+                href="https://github.com/kor-al"
+                target="_blank"
+                title="My GitHub"
+                >github.com/kor-al</a
+              >
+            </li>
+          </ul>
+        </section>
+        <section class="skills">
+          <h3>Skills</h3>
 
-        <ul>
-          <li><i class="icon software-skill cpp"></i>C++/C#</li>
-          <!-- <li><i class="icon empty"></i>Unity</li> -->
-        </ul>
-      </section>
+          <ul>
+            <li>Machine Learning and AI</li>
+            <li>Statistical Modelling</li>
+            <li>Data Mining</li>
+            <li>Data Visualization</li>
+            <li>Front-End Development</li>
+          </ul>
 
-      <section class="languages">
-        <h3>Languages</h3>
-        <ul class="languages__list">
-          <li>Russian <div class="details">native</div>
-          </li>
-          <li>English <div class="details">8 IELTS C1, fluent</div>
-          </li>
-          <li>German <div class="details">Goethe-Zertifikat B1, intermediate</div>
-          </li>
-        </ul>
-      </section>
+          <ul>
+            <li>
+              <i class="icon python"></i>Python
+              <div class="details">
+                scikit-learn, tensorflow, keras, pandas, seaborn, plotly, bokeh
+                etc
+              </div>
+            </li>
+            <li><i class="icon sql"></i>SQL</li>
+            <li><i class="icon r-matlab"></i>R, MATLAB</li>
+            <li><i class="icon tableau"></i>Tableau</li>
+          </ul>
 
-      <section class="achievements">
-        <h3>Achievements</h3>
-        <ul class="achievements__list">
-          <li>First prize and Storytelling awards in the DataDNA Challenge <div class="details">Monthly dataviz
-              competition by <a href="https://onyxdata.co.uk/data-dna-dataset-challenge/DataDNA" class="details__link"
-                target="_blank" title="DataDNA Challenge">Onyx Data</a></div>
-          </li>
-          <li>Participation in ACM ICMR and ISMAR <div class="details"> A-rank conferences in Computer Vision</div>
-          </li>
-          <li>Computer Vision articles<div class="details"><a href="./CV_Conferences.pdf" class="details__link"
-                target="_blank" title="My publications"><i class="fa fa-link"></i>List of all publications</a></div>
-          </li>
-          <li>Erasmus Mundus Scholarship awarded
-            <div class="details">Only 2% of applied students received the scholarship to study abroad</div>
-          </li>
-        </ul>
-      </section>
-      <!-- <section class="courses">
+          <ul>
+            <li><i class="icon web-skill html"></i>JavaScript, D3.js,</li>
+            <li><i class="icon emrty"></i>React, Angular,</li>
+            <li><i class="icon emrty"></i>TypeScript, RxJS</li>
+          </ul>
+
+          <ul>
+            <li><i class="icon software-skill cpp"></i>C++/C#</li>
+            <!-- <li><i class="icon empty"></i>Unity</li> -->
+          </ul>
+        </section>
+
+        <section class="languages">
+          <h3>Languages</h3>
+          <ul class="languages__list">
+            <li>
+              Russian
+              <div class="details">native</div>
+            </li>
+            <li>
+              English
+              <div class="details">8 IELTS C1, fluent</div>
+            </li>
+            <li>
+              German
+              <div class="details">B1, intermediate</div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="achievements">
+          <h3>Achievements</h3>
+          <ul class="achievements__list">
+            <li>
+              First prize and Storytelling awards in the DataDNA Challenge
+              <div class="details">
+                Monthly dataviz competition by
+                <a
+                  href="https://onyxdata.co.uk/data-dna-dataset-challenge/DataDNA"
+                  class="details__link"
+                  target="_blank"
+                  title="DataDNA Challenge"
+                  >Onyx Data</a
+                >
+              </div>
+            </li>
+            <li>
+              Participation in ACM ICMR and ISMAR
+              <div class="details">A-rank conferences in Computer Vision</div>
+            </li>
+            <li>
+              Computer Vision articles
+              <div class="details">
+                <a
+                  href="./CV_Conferences.pdf"
+                  class="details__link"
+                  target="_blank"
+                  title="My publications"
+                  ><i class="fa fa-link"></i>List of all publications</a
+                >
+              </div>
+            </li>
+            <li>
+              Erasmus Mundus Scholarship awarded
+              <div class="details">
+                Only 2% of applied students received the scholarship to study
+                abroad
+              </div>
+            </li>
+          </ul>
+        </section>
+        <!-- <section class="courses">
         <h3>Professional Development</h3>
         <ul class="courses__list">
           <li>FCC JavaScript, Front End Libraries and Data Visualisation
@@ -298,11 +428,9 @@
           </li>
         </ul>
       </section> -->
+      </div>
     </div>
-  </div>
+  </body>
 
-</body>
-
-<script src="app/js/script.js" type="text/javascript"></script>
-
+  <script src="app/js/script.js" type="text/javascript"></script>
 </html>
